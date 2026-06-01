@@ -1,3 +1,8 @@
+⚠️ Disclaimer
+This tool is created for educational purposes, authorized penetration testing, and network troubleshooting.
+Do not use this tool on networks you do not own or do not have explicit permission to monitor.
+The author is not responsible for any misuse of this software.
+
 # 1. Clone the repository
 git clone [https://github.com/vyshakhak/vcapture.git](https://github.com/vyshakhak/vcapture.git)
 cd vcapture
@@ -7,3 +12,23 @@ chmod +x vcapture.py
 
 # 3. Move it to your local binaries folder
 sudo mv vcapture.py /usr/local/bin/vcapture
+
+💻 Usage
+Because vcapture interacts directly with network interface cards, it must be run with sudo.
+
+Basic Usage (Sniff on the default interface indefinitely):
+
+Bash
+sudo vcapture
+Specify a Network Interface:
+
+Bash
+sudo vcapture -i eth0
+Limit the Number of Captured Packets:
+
+Bash
+sudo vcapture -i wlan0 -c 50
+Help Menu:
+
+Bash
+vcapture -h
