@@ -1,0 +1,8 @@
+Kali usually comes with the networking tools we need, but just to be safe,
+ensure the scapy library is installed
+sudo apt install python3-scapy
+Make the tool executable:
+Tell Linux that this file is a program that can be run, rather than just text to be read
+chmod +x vcapture.py
+Move the file into your system's binary folder and drop the .py extension. This is the magic step that lets you type vcapture from anywhere, just like nmap or ls:
+sudo mv vcapture.py /usr/local/bin/vcapture
